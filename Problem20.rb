@@ -7,6 +7,7 @@ and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
 Find the sum of the digits in the number 100!
 =end
 def factorial(positiveInteger)
+	#recursive function for computing factorials
 	if positiveInteger ==1
 		return 1
 	else

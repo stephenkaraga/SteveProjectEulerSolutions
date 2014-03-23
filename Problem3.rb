@@ -3,6 +3,8 @@
 
 What is the largest prime factor of the number 600851475143 ?	
 =end
+#an alternative and simpler way to solve this would be using ruby's
+#prime library
 def isPrime integer
 	#takes an integer as an argument and returns true if it is prime or false
 	#if composite

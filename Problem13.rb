@@ -113,5 +113,5 @@ text.each_line do |line|
 end
 holderDigits = holderofStrings.map {|string| string.to_i}
 bigSum = holderDigits.reduce(:+)
-firstTenDigits = bigSum.to_s.split("").first(10).map! {|tt| tt.to_i}.join("").to_i
+firstTenDigits = bigSum.to_s.split("").first(10).map! {|string| string.to_i}.join("").to_i
 puts firstTenDigits

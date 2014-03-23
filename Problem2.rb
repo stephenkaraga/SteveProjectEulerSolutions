@@ -10,7 +10,6 @@ By considering the terms in the Fibonacci
 sequence whose values do not exceed four 
 million, find the sum of the even-valued terms
 =end
-def solution
 	array_of_fibbonacci = [1, 2]
 	while true
 		if array_of_fibbonacci.last > 4000000
@@ -27,5 +26,3 @@ def solution
 	end
 	sum = even_terms.reduce(:+)
 	puts sum
-end
-solution

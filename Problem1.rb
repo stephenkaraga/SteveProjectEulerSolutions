@@ -13,7 +13,7 @@ multiples = []
 
 1.upto(999) do |multiple|
   if num % 3 == 0 || num % 5 == 0
-    arr.push(num)
+    multiples.push(num)
   end
 end
 

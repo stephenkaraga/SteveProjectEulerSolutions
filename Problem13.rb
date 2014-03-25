@@ -104,14 +104,16 @@ sum of the following one-hundred 50-digit numbers.
 53503534226472524250874054075591789781264330331690
 =end
 
-holderofStrings = []
-#helper file includes all of the numbers so we can
-#read them line by line
+lines = []
+
 text=File.open('Problem13helper.rb').read
+
 text.each_line do |line|
-  holderofStrings.push(line)
+  lines.push(line)
 end
-holderDigits = holderofStrings.map {|string| string.to_i}
-bigSum = holderDigits.reduce(:+)
-firstTenDigits = bigSum.to_s.split("").first(10).map! {|string| string.to_i}.join("").to_i
-puts firstTenDigits
+
+digits = lines.map {|string| string.to_i}
+big_sum = digits.reduce(:+)
+
+first_ten_digits = big_sum.to_s.split("").first(10).map! {|string| string.to_i}.join("").to_i
+puts first_ten_digits

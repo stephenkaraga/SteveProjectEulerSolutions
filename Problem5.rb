@@ -6,8 +6,8 @@ What is the smallest positive number
 that is evenly divisible by all 
 of the numbers from 1 to 20?
 =end
-def evenlyDividedbyEach(integer, arrayedRange)
-  arrayedRange.each {|element| return false unless integer % element == 0}
+def evenlyDividedbyEach(integer, arrayed_range)
+  arrayed_range.each {|element| return false unless integer % element == 0}
   true
 end
 

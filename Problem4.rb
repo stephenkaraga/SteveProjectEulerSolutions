@@ -7,27 +7,27 @@
 Find the largest palindrome made from the product of two 3-digit numbers. 
 	
 =end
-def isPalindrome integer
-  arrayofNumbers = integer.to_s.split("")
-  arrayofNumbersReversed = arrayofNumbers.reverse
-  if arrayofNumbers == arrayofNumbersReversed
+def is_palindrome integer
+  array_of_numbers = integer.to_s.split("")
+  array_of_numbers_reversed = array_of_numbers.reverse
+  if array_of_numbers == array_of_numbers_reversed
     return true
   end
   false
 end
 
 product = 1
-arrayofPalindromes = []
-threeDigitNumbers = (100..999).to_a
-threeDigitNumbers2 = (100..999).to_a
+array_of_palindromes = []
+three_digit_numbers = (100..999).to_a
+three_digit_numbers2 = (100..999).to_a
 
-for num in threeDigitNumbers
-  for number in threeDigitNumbers2
+for num in three_digit_numbers
+  for number in three_digit_numbers2
 	product = num * number
-	if isPalindrome(product)
-	  arrayofPalindromes.push(product)
+	if is_palindrome(product)
+	  array_of_palindromes.push(product)
 	end
   end
 end
-answer = arrayofPalindromes.max
+answer = array_of_palindromes.max
 puts answer

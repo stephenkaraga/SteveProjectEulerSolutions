@@ -13,15 +13,15 @@ Find the difference between the sum of the squares of the first one
 hundred natural numbers and the square of the sum.	
 
 =end
-def sumOftheSquares(array)
+def sum_of_the_squares(array)
   array.map! {|element| element**2}.reduce(:+)
 end
 
-def squareoftheSums(array)
+def square_of_the_sums(array)
   array.reduce(:+)**2
 end
 
 first_hundred = (1..100).to_a
 
-difference = squareoftheSums(first_hundred) - sumOftheSquares(first_hundred) 
+difference = square_of_the_sums(first_hundred) - sum_of_the_squares(first_hundred) 
 puts difference

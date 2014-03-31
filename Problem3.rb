@@ -4,7 +4,7 @@
 What is the largest prime factor of the number 600851475143 ?	
 =end
 
-def isPrime integer
+def is_prime integer
   if integer < 2 || (integer.even? && integer != 2) || (integer.to_s.split("").last.to_i == 5 && integer!= 5)
     return false
   end
@@ -22,7 +22,7 @@ product = 1
 factors = []
 
 while product < dividend/2 
-  if dividend % divisor == 0 && isPrime(divisor)
+  if dividend % divisor == 0 && is_prime(divisor)
     factors.push(divisor)
 	product *= divisor
   end
